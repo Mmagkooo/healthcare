@@ -1,7 +1,7 @@
 // src/components/CategorySearch.js
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import Input from '@/components/ui/Input';  // Adjust the import path if needed
+import Input from '@/components/ui/Input'; 
 import { Search } from 'lucide-react';
 
 function CategorySearch() {

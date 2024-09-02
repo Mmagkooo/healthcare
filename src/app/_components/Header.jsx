@@ -29,7 +29,7 @@ function Header() {
         <Image src='/logo.svg' alt='logo' width={140} height={40} priority />
 
         <ul className='md:flex hidden gap-10'>
-            {HeaderMenu.map((item) => (
+            {HeaderMenu.map((item) => {
                 <li key={item.id}
                     className='hover:text-primary cursor-pointer hover:scale-105 
                     transition-all ease-in-out text-xl'>
@@ -37,7 +37,7 @@ function Header() {
                         {item.name}
                     </Link>
                 </li>
-            ))}
+            })}
         </ul>
     </div>
     <Button>Get Started</Button>

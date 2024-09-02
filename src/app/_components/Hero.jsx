@@ -16,7 +16,7 @@ function Hero() {
       </div>
 
       <div className="lg:py-24">
-        <h2 className="text-3xl font-bold sm:text-4xl">We Take Care Our Patients Health</h2>
+        <h2 className="text-3xl font-bold sm:text-4xl">We Take Care Our <span className='text-primary'>Patients Health</span></h2>
 
         <p className="mt-4 text-gray-800">
         "At the heart of our care is a commitment to your well-being. Our dedicated team of
