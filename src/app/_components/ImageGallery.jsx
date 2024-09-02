@@ -1,7 +1,6 @@
 import React from 'react';
 
 const ImageGallery = () => {
-  // Define images with corresponding labels
   const images = [
     {
       src: 'https://www.shutterstock.com/image-vector/vector-human-brain-on-white-600nw-1928125664.jpg',
@@ -16,8 +15,16 @@ const ImageGallery = () => {
       label: 'Kidney'
     },
     {
-      src: 'https://i.pinimg.com/474x/d7/40/7a/d7407a4e8be2bdbc8e06cff6da7b46ac.jpg',
-      label: 'Nature'
+      src: 'https://us.123rf.com/450wm/moodboard/moodboard1304/moodboard130405145/19213570-blue-eye-on-white-background.jpg',
+      label: 'Eyes'
+    },
+    {
+      src: 'https://st2.depositphotos.com/2498595/5605/v/950/depositphotos_56057369-stock-illustration-ear-flat-blue-simple-icon.jpg',
+      label: 'Ear'
+    },
+    {
+      src: 'https://thumbs.dreamstime.com/b/blue-stomach-silhouette-white-background-blue-flat-silhouette-sign-symbol-stomach-organ-isolated-white-background-153913473.jpg',
+      label: 'stomach'
     }
   ];
 
