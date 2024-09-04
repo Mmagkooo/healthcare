@@ -1,6 +1,6 @@
 "use client"
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 import React from 'react';
 
 const ImageGallery = () => {
@@ -37,9 +37,15 @@ const ImageGallery = () => {
   return (
     <div className="flex flex-wrap gap-4 justify-center">
       {images.map((image, index) => (
-       <Link href={'/search/'+image?.label} >
-        <div key={index} className="w-48 border-2 border-gray-300 rounded-lg overflow-hidden shadow-md hover:shadow-lg hover:scale-105 transition-transform duration-300">
-          <img src={image.src} alt={`Image ${index + 1}`} className="w-full h-48 object-cover" />
+       <Link key={index} href={'/search/'+image?.label} >
+        <div  className="w-48 border-2 border-gray-300 rounded-lg overflow-hidden shadow-md hover:shadow-lg hover:scale-105 transition-transform duration-300">
+        <Image 
+              src={image.src} 
+              alt={`Image ${index + 1}`} 
+              width={192} 
+              height={192} 
+              className="w-full h-48 object-cover" 
+            />
           <div className="text-center mt-2 text-gray-800 font-semibold">{image.label}</div>
         </div>
        </Link>
