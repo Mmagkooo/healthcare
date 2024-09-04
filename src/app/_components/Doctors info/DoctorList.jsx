@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 
 const DoctorList = () => {
@@ -7,18 +8,21 @@ const DoctorList = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('/Doctors.json')
-      .then((response) => {
+    const fetchDoctors = async () => {
+      try {
+        const response = await fetch('/Doctors.json');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
-        return response.json();
-      })
-      .then((data) => setDoctors(data))
-      .catch((error) => {
+        const data = await response.json();
+        setDoctors(data);
+      } catch (error) {
         console.error('Error fetching the doctors:', error);
         setError('Failed to load doctors.');
-      });
+      }
+    };
+
+    fetchDoctors();
   }, []);
 
   return (
@@ -36,15 +40,15 @@ const DoctorList = () => {
               key={index}
               className="border border-gray-300 rounded-lg p-5 w-full max-w-xs text-center shadow-md transition-transform transform hover:scale-105 mt-5"
             >
-              <img
+              <Image
                 src={doctor.image || 'placeholder-image-url'} // Use a placeholder if image is missing
-                alt={doctor.name}
+                alt={doctor.name || 'Doctor Image'}
                 className="w-36 h-36 rounded-full mx-auto"
               />
-              <h2 className="text-xl mt-5 mb-2">{doctor.name}</h2>
-              <p>Age: {doctor.age}</p>
-              <p>Field: {doctor.field}</p>
-              <p>Experience: {doctor.experience}</p>
+              <h2 className="text-xl mt-5 mb-2">{doctor.name || 'Unknown Name'}</h2>
+              <p>Age: {doctor.age || 'N/A'}</p>
+              <p>Field: {doctor.field || 'N/A'}</p>
+              <p>Experience: {doctor.experience || 'N/A'}</p>
             </div>
           ))
         )}

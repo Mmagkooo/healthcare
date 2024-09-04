@@ -15,7 +15,7 @@ function CategorySearch() {
       </p>
       <div className="mt-4 flex flex-col sm:flex-row w-full max-w-md sm:max-w-lg lg:max-w-xl items-center">
         <Input type="text" placeholder="Search..." className="flex-1 mb-2 sm:mb-0 sm:mr-2" />
-        <Button type="submit" className="flex-shrink-0">
+        <Button type="button" className="flex-shrink-0">
           <Search className="mr-2 h-4 w-4" />
           Search
         </Button>
