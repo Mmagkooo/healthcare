@@ -48,29 +48,7 @@ function DocCategoryList() {
 
   return (
     <div className='h-screen mt-5 flex flex-col'>
-        <Command>
-            <CommandInput placeholder="Type a command or search..." />
-            <CommandList className="overflow-visible">
-                <CommandEmpty>No results found.</CommandEmpty>
-                <CommandGroup heading="Suggestions">
-                    {doctors.map((item, index) => (
-                        <CommandItem key={index}>
-                            <Link href={`/search/${item.label}`} className={`p-2 flex gap-2 items-center text-blue-600 font-bold rounded-md cursor-pointer w-full ${paramsCate === item.label ? 'bg-blue-100' : ''}`}>
-                                <Image
-                                    src={item.src}
-                                    alt={`Image ${index + 1}`}
-                                    width={40} // Provide width and height for Image component
-                                    height={40}
-                                    className="object-cover"
-                                />
-                                <label>{item.label}</label>
-                            </Link>
-                        </CommandItem>
-                    ))}
-                </CommandGroup>
-                <CommandSeparator />
-            </CommandList>
-        </Command>
+     Search
     </div>
   );
 }

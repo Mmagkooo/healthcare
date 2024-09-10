@@ -11,6 +11,7 @@ const DoctorList = () => {
     const fetchDoctors = async () => {
       try {
         const response = await fetch('/Doctors.json');
+        console.log('Response:', response);
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
@@ -24,6 +25,7 @@ const DoctorList = () => {
 
     fetchDoctors();
   }, []);
+console.log(doctors);
 
   return (
     <div className="flex flex-col items-center p-5 mt-10">
@@ -41,6 +43,8 @@ const DoctorList = () => {
               className="border border-gray-300 rounded-lg p-5 w-full max-w-xs text-center shadow-md transition-transform transform hover:scale-105 mt-5"
             >
               <Image
+              width={144}
+              height={144}
                 src={doctor.image || 'placeholder-image-url'} // Use a placeholder if image is missing
                 alt={doctor.name || 'Doctor Image'}
                 className="w-36 h-36 rounded-full mx-auto"
