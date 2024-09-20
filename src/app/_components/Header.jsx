@@ -5,9 +5,21 @@ import React from 'react'
 
 function Header() {
     const HeaderMenu = [
-        { id: 1, name: "Home", path: "/" },
-        { id: 2, name: "Appointment", path: "/appointment" },
-        { id: 3, name: "Education", path: "/education" },
+        {
+             id: 1, 
+             name: "Home", 
+             path: "/"
+             },
+        { 
+            id: 2, 
+            name: "Appointment", 
+            path: "/appointment"
+         },
+        { 
+            id: 3, 
+            name: "Education", 
+            path: "/education"
+         },
     ]
 
     return (
@@ -27,7 +39,7 @@ function Header() {
                     ))}
                 </ul>
             </div>
-            <Button>Get Started</Button>
+            <Button >Get Started</Button>
         </div>
     )
 }
