@@ -17,7 +17,7 @@ import { usePathname } from 'next/navigation';
 
 function DocCategoryList() {
   const params = usePathname();
-  const paramsCate = params.split('/')[2] || ""; 
+  const paramsCate = params.split('/')[2] || ""; // Ensure paramsCate has a default value
 
   const doctors = [
     {

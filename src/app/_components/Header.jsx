@@ -1,31 +1,21 @@
+import React from 'react'
+import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
-
 function Header() {
     const HeaderMenu = [
-        {
-             id: 1, 
-             name: "Home", 
-             path: "/"
-             },
-        { 
-            id: 2, 
-            name: "Appointment", 
-            path: "/appointment"
-         },
-        { 
-            id: 3, 
-            name: "Education", 
-            path: "/education"
-         },
+        { id: 1, name: "Home", path: "/" },
+        { id: 2, name: "Appointment", path: "/appointment" },
+        { id: 3, name: "Education", path: "/education" },
     ]
 
     return (
         <div className='flex justify-between px-4 items-center shadow-sm'>
             <div className='flex gap-20 items-center p-6'>
-                <Image src='/logo.svg' alt='logo' width={140} height={40} priority />
+                <Image src='/logo.svg' alt='logo' 
+                width={140} 
+                height={40} 
+                priority />
 
                 <ul className='md:flex hidden gap-10'>
                     {HeaderMenu.map((item) => (
@@ -39,7 +29,11 @@ function Header() {
                     ))}
                 </ul>
             </div>
-            <Button >Get Started</Button>
+    <Button>
+        <Link href = "/Login">
+        Get Started
+        </Link>
+        </Button>
         </div>
     )
 }

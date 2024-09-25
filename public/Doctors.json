@@ -1,98 +1,86 @@
-[
+ [
     {
-      "id": 1,
       "image": "https://expathealthservices.com/wp-content/uploads/2021/07/house-call.png",
       "name": "Dr. John Doe",
       "age": 45,
-      "field": "Heart",
+      "field": "Cardiology",
       "experience": "20 years"
     },
     {
-      "id": 2,
       "image": "https://www.trdoktor.com/file/2017/08/65248471735.jpg",
       "name": "Dr. Jane Smith",
       "age": 39,
-      "field": "Kidney",
+      "field": "Neurology",
       "experience": "15 years"
     },
     {
-      "id": 3,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7AsV4bbwltT2ECV_t7JZ7Fjf3P9xdp7zfEg&s",
       "name": "Dr. Emily Johnson",
       "age": 50,
-      "field": "Kidney",
+      "field": "Orthopedics",
       "experience": "25 years"
     },
     {
-      "id": 4,
       "image": "https://evb9ktagfkv.exactdn.com/wp-content/uploads/2017/06/doctor-phone.png?strip=all&lossy=1&ssl=1",
       "name": "Dr. Michael Brown",
       "age": 38,
-      "field": "Eyes",
+      "field": "Pediatrics",
       "experience": "14 years"
     },
     {
-      "id": 5,
       "image": "https://www.shutterstock.com/image-photo/beautiful-smiling-female-doctor-happy-260nw-1390534574.jpg",
       "name": "Dr. Sarah Davis",
       "age": 43,
-      "field": "Eyes",
+      "field": "Dermatology",
       "experience": "18 years"
     },
     {
-      "id": 6,
       "image": "https://www.duzeygoz.com.tr/wp-content/uploads/2024/04/Sahan-hoca-450-1.png",
       "name": "Dr. William Wilson",
       "age": 47,
-      "field": "Ear",
+      "field": "Gastroenterology",
       "experience": "22 years"
     },
     {
-      "id": 7,
       "image": "https://www.duzeygoz.com.tr/wp-content/uploads/2024/04/atilla-hoca-450-1.png",
       "name": "Dr. Jessica Martinez",
       "age": 36,
-      "field": "Ear",
+      "field": "Oncology",
       "experience": "12 years"
     },
     {
-      "id": 8,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1fW3-aTc9ba25uvJ4Ab1CNhBSW4hMZURBE_83bVxNP_LczAVyoNE3P78edydOKK2cckI&usqp=CAU",
       "name": "Dr. David Lee",
       "age": 44,
-      "field": "stomach",
+      "field": "Radiology",
       "experience": "19 years"
     },
     {
-      "id": 9,
       "image": "https://www.trdoktor.com/file/2017/08/65248471735.jpg",
       "name": "Dr. Karen Thomas",
       "age": 41,
-      "field": "stomach",
+      "field": "Psychiatry",
       "experience": "17 years"
     },
     {
-      "id": 10,
       "image": "https://www.duzeygoz.com.tr/wp-content/uploads/2024/04/remziye-hoca-450-1.png",
       "name": "Dr. Daniel White",
       "age": 40,
-      "field": "Human-Brain",
+      "field": "Ophthalmology",
       "experience": "16 years"
     },
     {
-      "id": 11,
       "image": "https://www.shutterstock.com/image-photo/beautiful-smiling-female-doctor-happy-260nw-1390534574.jpg",
       "name": "Dr. Laura Harris",
       "age": 52,
-      "field": "Human-Brain",
+      "field": "Rheumatology",
       "experience": "27 years"
     },
     {
-      "id": 12,
       "image": "https://www.trdoktor.com/file/2017/08/65248471735.jpg",
       "name": "Dr. James Clark",
       "age": 49,
-      "field": "Human-Brain",
+      "field": "Endocrinology",
       "experience": "24 years"
     }
   ]

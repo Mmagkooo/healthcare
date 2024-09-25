@@ -44,6 +44,7 @@ const ImageGallery = () => {
               alt={`Image ${index + 1}`} 
               width={192} 
               height={192} 
+              priority 
               className="w-full h-48 object-cover" 
             />
           <div className="text-center mt-2 text-gray-800 font-semibold">{image.label}</div>

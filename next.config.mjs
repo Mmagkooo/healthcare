@@ -4,11 +4,27 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'www.shutterstock.com',
+        hostname: 'expathealthservices.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.trdoktor.com',
       },
       {
         protocol: 'https',
         hostname: 'encrypted-tbn0.gstatic.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'evb9ktagfkv.exactdn.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.shutterstock.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.duzeygoz.com.tr',
       },
       {
         protocol: 'https',
@@ -25,22 +41,6 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'thumbs.dreamstime.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'expathealthservices.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'www.trdoktor.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'evb9ktagfkv.exactdn.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'www.duzeygoz.com.tr',
       },
     ],
   },
